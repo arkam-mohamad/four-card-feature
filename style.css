@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+main{
+  width: 400px;
+  text-align: center;
+  margin: 50px auto;
+}
+.container{
+  margin: 20px auto;
+  max-width: fit-content;
+  height: 600px;
+}
+h1{
+  color: hsl(234, 12%, 34%);
+  font-size: 24px;
+}
+h2{
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+p{
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+}
+.section{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 5px 10px 10px hsl(233, 21%, 92%), -5px 10px 10px hsl(233, 21%, 92%);
+  border-radius: 5px;
+  margin: 20px;
+}
+.section img{
+  align-self: flex-end;
+}
+h3{
+  color: hsl(234, 12%, 34%);
+}
+.supervisor{
+  border-top: 5px solid hsl(180, 62%, 55%);
+  translate: -320px 100px;
+}
+.team-builder{
+  border-top: 5px solid hsl(0, 78%, 62%);
+  translate: 0 -250px;
+}
+.karma{
+  border-top: 5px solid hsl(34, 97%, 64%);
+  translate: 0 -250px;
+}
+.calculator{
+  border-top: 5px solid hsl(212, 86%, 64%);
+  translate: 320px -600px;
+}
+
+
+@media screen and (max-width:950px) {
+  main, .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    max-width: fit-content;
+    height: fit-content;
+  }
+  .section{
+    translate: 0;
+  }
+}
